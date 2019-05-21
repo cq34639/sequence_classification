@@ -1,0 +1,6 @@
+ConfigParser==3.7.4
+nltk==3.4.1
+numpy==1.16.1
+pandas==0.24.1
+scikit-learn==0.20.2
+scikit-optimize==0.5.2
