@@ -31,7 +31,7 @@ Due to limited time availability, two network architectures were explored: a ful
  * number of epochs,
  * number of neurons per layer / number of layers
  
- The dense network was selected as a baseline architecture to measure the recurrent network against. Given that sentence context and word order are important for NLP, one would expect that the recurrent network and its LSTM memory would better able to handle the time series sequences. Future exploration could involve additional layers, a convolutional based architecture, or an attention-based RNN.   
+ The dense network was selected as a baseline architecture to measure the recurrent network against. Given that sentence context and word order are important for NLP, one would expect that the recurrent network and its LSTM memory would better able to handle the time series sequences, and the results were very similar across both methods. Certainly, the approaches can be further optimized, and additional exploration could involve a more diverse cross-validation search space, more layers, a convolutional based architecture, or an attention-based RNN.   
 
 # Results
 Currently, the optimal metrics found are:
@@ -43,8 +43,8 @@ Currently, the optimal metrics found are:
     * Test F1 Score: 0.91
 
 * Recurrent neural network:
-    * Final Training Loss: 
-    * Final Training Accuracy:
-    * Test Precision:
-    * Test Recall:
-    * Test F1 Score: 
+    * Final Training Loss: 0.0586
+    * Final Training Accuracy: 0.9786
+    * Test Precision: 0.91
+    * Test Recall: 0.87
+    * Test F1 Score: 0.89
