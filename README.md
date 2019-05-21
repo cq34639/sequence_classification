@@ -21,7 +21,7 @@ This aggregates the following steps, which can also be run manually if desired:
 * `docker build -f docker/Dockerfile . -t sequence_classification:latest`
 * On GPU: `nvidia-docker run -it --rm sequence_classification:latest /bin/bash`
 * OR on CPU: `docker run -it --rm sequence_classification:latest /bin/bash`
-* (Inside container): `python /src/sequence_classifier.py`
+* (Inside container): `python /src/sequence_classifier.py -d [training data dir] -m [model type: fcn or rnn] -c [network config file]`
 
 # Procedures
 Due to limited time availability, two network architectures were explored: a fully connected dense network, and a recurrent neural network. These were implemented in TensorFlow 2.0-Alpha, with hyperparameter optimization via Bayesian grid search. In both networks currently attempted, I set this search space across:
